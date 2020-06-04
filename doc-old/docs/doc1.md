@@ -2,6 +2,9 @@
 id: doc1
 title: Latin-ish
 sidebar_label: Example Page
+authorURL: http://twitter.com/JoelMarcey
+authorFBID: 611217057
+authorTwitter: JoelMarcey
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.

@@ -41,6 +41,12 @@ PHP 7.0版本 apache 2.4版本
 
 理由,FPM更稳定,支持更大的请求
 
+## 临时的解决方案
+
+1. 设置MaxRequestWorkers =1000 这个只是延迟了事故发生,如果服务器再次耗尽内存,问题依旧会发生
+2. 如果请求量不多,可以切换apache的工作模式,看能否解决,修改apache工作模式 切换到 prefork  
+3. http请求的头部设置 ''Connection'  => 'close'
+
 ## 查看服务器当前TCP CLOSE_WAIT状态的进程
 
 ```
@@ -67,11 +73,6 @@ tcpdump  -w   /path/log.cap
 
 因为CLOSE_WAIT太多,导致tcp进程池满了,服务端无法再服务
 
-临时的解决方案
-
-1. 设置MaxRequestWorkers =1000 这个只是延迟了事故发生,如果服务器再次耗尽内存,问题依旧会发生
-2. 如果请求量不多,可以切换apache的工作模式,看能否解决,修改apache工作模式 切换到 prefork  
-3. http请求的头部设置 ''Connection'  => 'close'
 
 ## CLOSE_WAIT故障分析
 

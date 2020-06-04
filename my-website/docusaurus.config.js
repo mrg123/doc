@@ -4,11 +4,11 @@ module.exports = {
   url: 'https://mrg123.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'mrg123', // Usually your GitHub org/user name.
+  projectName: 'doc', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'My Doc Share',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -75,7 +75,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Mrg123, Inc. Built with FB Docusaurus.`,
     },
   },
   presets: [
