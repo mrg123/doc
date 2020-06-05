@@ -15,7 +15,7 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/doc1',
+          to: 'docs/精准定位问题',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
